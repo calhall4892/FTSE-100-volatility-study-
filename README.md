@@ -15,4 +15,6 @@ This project is designed to act as an introduction into financial modelling and 
 ## 2.0 Research
 The research chapter contains all of the key elements and areas of interest that arise during the project. This will cover all aspects of both finance and ml (including core mathematics). This will be used as a guide and can be referred back if needed.
 
-### Time series
+### 2.1 Core Concepts
+
+#### 2.11 Time series
