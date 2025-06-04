@@ -26,4 +26,13 @@ A time series is a sequence of data points that has been collected over a period
 * Trend - The trend is the long term increases or decreases that happen within the data. This is considered as a constant directional movement such as a general rise in company x stock price. Trends can be considered as either deterministic or stochastic, with the former allowing for an underlying rationale to be put forward, whereas the latter is a random feature that is difficult to explain. This means that the deterministic trend can be more easily plotted and predicted with mathematical formulas scuh as a linear or quadratic equation. A stochastic is more difficult due to the perceived randomness and the impact of shocks. An example of this could be a company stock where we can see a rising trend but we cannot apply a specific mathematical formula or say this stock will rise by x% per year due to y.
 
 Worked example\
-$$Y_t = \beta_0 + \beta_1 t + \epsilon_t$$
+$$R_t = \beta_0 + \beta_1 t + \epsilon_t$$
+
+$R_t$: The revenue of a company\
+$\beta_0$: The intercept, representing the baseline revenue at $t = 0$\
+$\beta_1$: The slope, representing the constand change in revenue for each quarter. This is the deterministic part\
+$t$: The time index (eg. quarter number)\
+$\epsilon_t$: A stationary error term (more detail following). This accounts for small fluctuations around the trend such as variations in sales etc\
+
+
+
