@@ -1,6 +1,6 @@
 # FTSE-100-volatility-study-
 
-## 1. Introduction
+## 1.0 Introduction
 This project is designed to act as an introduction into financial modelling and time series analysis. It will use a ml researcher approach in that a large portion of this will be a research based approach and not just making and producing the model. The project will consist of 8 key phases totalling around 16 weeks and will roughly consist of the following;
 
 * Phase 1: Foundational Understanding and Problem Formulation (Weeks 1-2)
@@ -18,3 +18,10 @@ The research chapter contains all of the key elements and areas of interest that
 ### 2.1 Core Concepts
 
 #### 2.11 Time series
+
+A time series is a sequence of data points that has been collected over a period of time. It is used in a number of different industries and applications such as finance, healthcare and transport. This is often complied over a set period of time such as hourly, daily, weekly etc. Time series analysis is the statistical analysis of the sequences of these data points over the period of time. It then infers what has happened over the historical period and then attempts to predict what will happen in the future. There are a number of fundamental concepts and in the following paragraphs, these are reseearched in greater detail.
+
+##### 2.111 Fundamental concepts
+
+* Trend
+  The trend is the long term increases or decreases that happen within the data. This is considered as a constant directional movement such as a general rise in company x stock price. Trends can be considered as either deterministic or stochastic, with the former allowing for an underlying rationale to be put forward, whereas the latter is a random feature that is difficult to explain.
