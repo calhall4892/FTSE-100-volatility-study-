@@ -24,15 +24,9 @@ A time series is a sequence of data points that has been collected over a period
 ##### 2.111 Fundamental concepts
 
 * Trend - The trend is the long term increases or decreases that happen within the data. This is considered as a constant directional movement such as a general rise in company x stock price. Trends can be considered as either deterministic or stochastic, with the former allowing for an underlying rationale to be put forward, whereas the latter is a random feature that is difficult to explain. This means that the deterministic trend can be more easily plotted and predicted with mathematical formulas scuh as a linear or quadratic equation. A stochastic is more difficult due to the perceived randomness and the impact of shocks. An example of this could be a company stock where we can see a rising trend but we cannot apply a specific mathematical formula or say this stock will rise by x% per year due to y.
-
-Worked example\
-$$R_t = \beta_0 + \beta_1 t + \epsilon_t$$
-
-$R_t$: The revenue of a company\
-$\beta_0$: The intercept, representing the baseline revenue at $t = 0$\
-$\beta_1$: The slope, representing the constand change in revenue for each quarter. This is the deterministic part\
-$t$: The time index (eg. quarter number)\
-$\epsilon_t$: A stationary error term (more detail following). This accounts for small fluctuations around the trend such as variations in sales etc\
+* Seasonality - Seasonality is a component of time series whereby a trend repeats in respect to the timing, direction or magnitude. Examples of these could be sales in coats increasing every year around Q3, or water sales increasing in the summer months.
+* Cycles - Cycles are falls and rises in time series data that do not have a fixed or predetermined frequency or length. Unlike seasonality, cycles are harder to predict and typically longer in duration, with 3-12 years being common, depending on the nature of the time series. An example of this could be preiods of business expansion whereby rises in sales, costs etc could have an impact. Also financial events such as recessions, depressions etc would be cycles.
+* Noise/irregularities - These are random flucuations within the data that cannot be attributed to either trend or seasonality. They are often erratic, unpredictable and may or may not be random.
 
 
 
