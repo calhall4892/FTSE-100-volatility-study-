@@ -27,6 +27,7 @@ A time series is a sequence of data points that has been collected over a period
 * Seasonality - Seasonality is a component of time series whereby a trend repeats in respect to the timing, direction or magnitude. Examples of these could be sales in coats increasing every year around Q3, or water sales increasing in the summer months.
 * Cycles - Cycles are falls and rises in time series data that do not have a fixed or predetermined frequency or length. Unlike seasonality, cycles are harder to predict and typically longer in duration, with 3-12 years being common, depending on the nature of the time series. An example of this could be preiods of business expansion whereby rises in sales, costs etc could have an impact. Also financial events such as recessions, depressions etc would be cycles.
 * Noise/irregularities - These are random flucuations within the data that cannot be attributed to either trend or seasonality. They are often erratic, unpredictable and may or may not be random.
-
-
-
+* Stationarity - This is where the time series is considered as either stationary or not. This can be defined as a series where the statistical metrics do not change so therefore metrics may change depending on where in the series it is taken. This is important to understand as many classic time series models such as (ARIMA) are predicated upon the series being stationary. When a time series is stationary, its future behaviour becomes significantly easier to predict as it will resemble its historical behaviour. The statistical properties that need to be constant are as follows.
+  - Mean. If the average mean doesnt change in the time series then it doesnt have a trend. Example would be a rising stock price.
+  - Variance. The spread of the data around the mean doesnt change and neither does the magnitude. Example would be where a stock price changes with market volitility during periods of market turmoil.
+  - Autocorrelation Structure. This is the correlation between the series and its lagged versions. The correlation between $Y_t$ and $Y_T-12$ (12 for 12 months) could be high, but this would be represented across every 12 monthly period.
