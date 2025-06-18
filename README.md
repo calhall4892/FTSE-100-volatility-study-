@@ -13,7 +13,7 @@ This project is designed to act as an introduction into financial modelling and 
 * Phase 8: Conclusions and Future Work (Week 16)
 
 ## 2.0 Research
-The research chapter contains all of the key elements and areas of interest that arise during the project. This will cover all aspects of both finance and ml (including core mathematics). This will be used as a guide and can be referred back if needed.
+The research chapter contains all of the key elements and areas of interest that arise during the project. This will cover all aspects of both finance and ml (including core mathematics). This will be used as a guide and can be referred back if needed. This is also to serve as a template for future research carried out on this Github.
 
 ### 2.1 Core Concepts
 
@@ -31,3 +31,24 @@ A time series is a sequence of data points that has been collected over a period
   - Mean. If the average mean doesnt change in the time series then it doesnt have a trend. Example would be a rising stock price.
   - Variance. The spread of the data around the mean doesnt change and neither does the magnitude. Example would be where a stock price changes with market volitility during periods of market turmoil.
   - Autocorrelation Structure. This is the correlation between the series and its lagged versions. The correlation between $Y_t$ and $Y_{t-12}$ (12 for 12 months) could be high, but this would be represented across every 12 monthly period.
+
+ In order to test stationarity, there are a number of statistical tests that can be carried out on the data and these are as follows.
+  - Augmented Dicky-Fuller (ADF). This doesnt directly test to see if the data is stationary but instead tests for the presence of unit root. A unit root is a feature that is typically found in non-stationary time series. This means that the times series has a  stochastic trend and can be described as wandering without a long term mean. There are 2 hypothesis in this, one being Null hypothesis $H_0$ and the other being Alternative hypothesis $H_a$. When carrying out this ADF test, the goal is to reject or disprove the null hypothesis as proving $H_a$ means the time series is stationary. If it cannot be rejected, then it means that time series is non-stationary and therefore needs to be transformed, usually by differencing, before it can be modelled.
+One issue that was present with the Dickey-Fuller test was that in complex time series, there was often still some autocorrelation within the data, even when accounting for the main trend. Therefore a new test was developed and this was the Augmented Dickey-Fuller test. This is where lagged difference terms to the underlying regression model. This augments the test and therefore makes it more capable of handling complex and realistic time series data. In practice, the ADF is always used now.
+
+The equation for the ADF is.
+
+
+$$
+\Delta y_t = \alpha + \beta t + \gamma y_{t-1} + \sum_{i=1}^{p} \delta_i \Delta y_{t-i} + \varepsilon_t
+$$
+
+Where:
+- \( \Delta y_t \) is the first difference of the series at time \( t \)
+- \( \alpha \) is a constant (drift term)
+- \( \beta t \) is the time trend
+- \( \gamma \) is the coefficient on the lagged level of the series
+- \( \delta_i \) are the coefficients on the lagged differences
+- \( p \) is the number of lagged difference terms
+- \( \varepsilon_t \) is the error term
+
