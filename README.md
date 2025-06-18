@@ -44,11 +44,11 @@ $$
 $$
 
 Where:
-- \( \Delta y_t \) is the first difference of the series at time \( t \)
-- \( \alpha \) is a constant (drift term)
-- \( \beta t \) is the time trend
-- \( \gamma \) is the coefficient on the lagged level of the series
-- \( \delta_i \) are the coefficients on the lagged differences
-- \( p \) is the number of lagged difference terms
-- \( \varepsilon_t \) is the error term
+- ($\Delta y_t$) is the first difference of the series at time \( t \)
+- ($\alpha$) is a constant (drift term)
+- ($\beta t$) is the time trend
+- ($\gamma$) is the coefficient on the lagged level of the series
+- ($\delta_i$) are the coefficients on the lagged differences
+- ($p$) is the number of lagged difference terms
+- ($\varepsilon_t$) is the error term
 
