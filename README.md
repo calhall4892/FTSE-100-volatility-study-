@@ -52,3 +52,5 @@ Where:
 - ($p$) is the number of lagged difference terms
 - ($\varepsilon_t$) is the error term
 
+Due to the complexities of this formula and the equation, completing a worked example is not possible showing the full breakdown so therefore it wont be done. It will be done in the main code and will be noted down afterwards and gone through in more detail.
+
